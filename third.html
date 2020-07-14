@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>dateformat</title>
+  </head>
+  <body>
+    <p>Date in format dd/mm/yyyy & dd-mm-yyyy</p>
+    <script>
+      var today = new Date();
+      var mydate = today.getDate();
+      var mymonth = today.getMonth();
+      var myyear = today.getFullYear();
+      mymonth = mymonth + 1;
+      mymonth = mymonth >= 10 ? mymonth : "0" + mymonth;
+      mydate = mydate >= 10 ? mydate : "0" + mydate;
+      document.write(mydate + "-" + mymonth + "-" + myyear);
+      document.write("<br>");
+      document.write(mydate + "/" + mymonth + "/" + myyear);
+    </script>
+  </body>
+</html>
